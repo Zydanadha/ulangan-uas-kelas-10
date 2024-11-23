@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 5 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    .navbar li {
+        margin-left: 40px; /* Jarak antar elemen navbar */
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0); /* Menambahkan warna teks pada tautan navbar */
+    }
+
+    .navbar img {
+        height: 50px; /* Menyesuaikan tinggi logo */
+    }
+    .foto-kanan{
+      float: right;
+      margin-left: 10px;
+    }
+    .menu-item {
+            text-align: center;
+            margin-bottom: 30px;
+     }
+    .menu-item img {
+            width: 250px;
+            height: 250px;
+     }
+</style>
+</head>
+
+<body>
+  <div class="container p-3 bg-warning w-100 d-flex flex-row justify-content-between align-items-center">
+    <nav class="navbar">
+        <img src="logo Shopee Food 2.png" alt="GrabFood">
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang kami</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Hubungi kami</a></li>
+        </ul>
+    </nav>
+</div>
+
+
+<div class="container p-5 bg-danger text-white text-center">
+  <h1>Menu</h1>
+  <p>Makanan dan Minuman</p>
+</div>
+<div class="container bg-warning">
+  <h2 class="text-center text-white my-4">Pemesanan Online</h2>
+  
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <img src="fast delivery.jpg" alt="Image 1" class="img-fluid">
+    </div>
+    <div class="col-md-6 text-content">
+      <h3>FAST DELIVERY</h3>
+      <p>Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 15 KM</p>
+    </div>
+  </div>
+
+  <!-- Second Zigzag Row (Reverse Order) -->
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6 order-md-2">
+      <img src="catering.jpg" alt="Image 2" class="img-fluid">
+    </div>
+    <div class="col-md-6 order-md-1 text-content">
+      <h3>ALA CARTE</h3>
+      <p>Menikmati hidangan kami langsung di rumah/kantor anda. Minimal order Rp500.000.</p>
+    </div>
+  </div>
+
+  <!-- Third Zigzag Row -->
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-6">
+      <img src="free delivery.jpg" alt="Image 3" class="img-fluid" >
+    </div>
+    <div class="col-md-6">
+      <h3>FREE DELIVERY</h3>
+      <p>Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 15 KM</p>
+    </div>
+  </div>
+
+  <div class="container">
+      <h1 class="text-center my-4 bg-secondary">Menu Kami</h1>
+      <div class="row">
+          <div class="col-sm-6 menu-item">
+              <h4>ayam</h4>
+              <img src="daging ayam.jpg" class="rounded" alt="jus">
+              <h6>1. ayam bakar</h6>
+              <h6>2. ayam serundeng</h6>
+              <h6>3. ayam goreng</h6>
+              <h6>4. ayam kecap</h6>
+              <h6>5. ayam suwir</h6>
+          </div>
+          <div class="col-sm-6 menu-item">
+              <h4>daging</h4>
+              <img src="daging.jpg" class="rounded" alt="jus">
+              <h6>1. daging ayam</h6>
+              <h6>2. daging sapi</h6>
+              <h6>3. daging kambing</h6>
+          </div>
+          <div class="col-sm-6 menu-item">
+              <h4>gulai</h4>
+              <img src="gulai - Copy.jpeg" class="rounded" alt="jus">
+              <h6>1. gulai daging sapi</h6>
+              <h6>2. gulai daging ayam</h6>
+              <h6>3. gulai ikan</h6>
+          </div>
+          <div class="col-sm-6 menu-item">
+              <h4>Minuman</h4>
+              <img src="jus.jpg" class="rounded" alt="jus">
+              <h6>1. Es jeruk</h6>
+              <h6>2. Es teh manis</h6>
+              <h6>3. Es kelapa</h6>
+              <h6>4. Es buah</h6>
+              <h6>5. Es cendol</h6>
+          </div>
+ 
+  <div class="container mt-5 bg-secondary teks-stard">
+    <h2 class="text-center mb-4">Form Pemesanan</h2>
+    <form>
+      <div class="mb-3 row">
+        <label for="deskripsi" class="col-sm-2 col-form-label">nama</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="deskripsi" rows="1" placeholder="Masukkan Pesanan" required></textarea>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <form>
+          <div class="mb-3 row align-items-center">
+            <label for="menu" class="col-sm-2 col-form-label">Layanan</label>
+            <div class="col-sm-10">
+              <select class="form-select" id="menu" required>
+                <option value="">Diantar</option>
+                <option value="Diambil">Diambil</option>
+              </select>
+            </div>
+          </div>
+         
+      <div class="mb-3 row">
+        <label for="deskripsi" class="col-sm-2 col-form-label">Pesanan</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="deskripsi" rows="1" placeholder="Masukkan Pesanan" required></textarea>
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </div>
+    </form>
+  </div>
+
+
+   </body>
+ </html>
